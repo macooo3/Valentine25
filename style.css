@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(252, 194, 204);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 100vw;
+}
+
+.context {
+  position: absolute;
+  margin-top: 50%;
+}
+
+.title {
+  font-family: "Sour Gummy", serif;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.btn-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.heart_shape {
+  display: flex;
+}
+
+.img1 {
+  margin-top: 30px;
+  margin-left: -285px;
+}
+
+.img2 {
+  margin-top: 30px;
+  margin-left: 52px;
+}
+
+.img3 {
+  margin-top: 220px;
+  margin-left: -440px;
+}
+
+.img4 {
+  margin-top: 120px;
+  margin-left: -120px;
+}
+
+.img5 {
+  margin-top: 220px;
+  margin-left: 215px;
+}
+
+.img6 {
+  margin-top: 465px;
+  margin-left: -310px;
+}
+
+.img7 {
+  margin-top: 465px;
+  margin-left: 80px;
+}
+
+.img8 {
+  margin-top: 650px;
+  margin-left: -120px;
+}
+
+#fadeImage {
+  align-items: center;
+  width:40%;
+  height: auto;
+  position: absolute;
+  margin-top: 50%;
+}
+
+#heart-img {
+  display: flex;
+  width: 150px;
+  min-height: 190px;
+  height: auto;
+  border-radius: 25%;
+  position: absolute;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.quote {
+  position:absolute;
+  margin-top:400px;
+  font-family: "Sour Gummy", serif;
+  margin-left: -250px;
+}
+
+
+.hidden {
+  display: none;
+  transition: opacity 4s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+  animation: fadeIn 2s;
+}
+
+#startStop {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  background-color: rgb(255, 41, 41);
+  border: 0;
+  border-radius: 10px;
+  width: 70px;
+  height: 30px;
+  outline: none;
+}
+
+.heart {
+  position: fixed;
+  top: -1vh;
+  width: 25px;
+  height: auto;
+  /* font-size: 40px; */
+  transform: translateY(0);
+  animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(101vh);
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.btn {
+  background-color: rgb(90, 25, 25);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Sour Gummy", serif;
+}
