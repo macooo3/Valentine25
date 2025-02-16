@@ -32,7 +32,7 @@ btnYes.addEventListener("click", function (e) {
   heartPage.classList.remove("hidden");
   heartPage.classList.add("visible");
   music.volume = 0.25;
-  // music.play()
+  music.play()
 });
 
 // clicked imgs
